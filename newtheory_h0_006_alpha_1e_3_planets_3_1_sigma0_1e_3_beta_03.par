@@ -1,0 +1,54 @@
+Setup			newtheory_h0_006_alpha_1e_3_planets_3_1_sigma0_1e_3_beta_03
+
+### Disk parameters
+
+
+AspectRatio		0.06            Thickness over Radius in the disc
+Sigma0			1.0e-3		Surface Density at r=1
+Alpha			1.0e-3		Uniform kinematic viscosity
+SigmaSlope		1.5		Slope of surface
+FlaringIndex		0.333333333
+
+# Radial range for damping (in period-ratios). Values smaller than one
+# prevent damping.
+
+DampingZone 1.15
+
+# Characteristic time for damping, in units of the inverse local
+# orbital frequency. Higher values means lower damping
+
+TauDamp 0.3
+
+### Planet parameters
+
+PlanetConfig		planets/3_1_active.cfg
+ThicknessSmoothing	0.6  Smoothing parameters in disk thickness
+RocheSmoothing		0.0
+Eccentricity		0.0
+ExcludeHill		NO
+
+### Numerical method parameters
+
+#Disk			YES 
+OmegaFrame		1.0003
+Frame			F
+IndirectTerm		Yes
+
+### Mesh parameters
+
+Nx			1047		Azimuthal number of zones 
+Ny			835		Radial number of zone
+Ymin		0.4		Inner boundary radius
+Ymax		59.0     #stockholm boundary bei 45
+Xmin			-3.141592653589793
+Xmax			3.141592653589793
+Spacing			Log
+
+
+### Output control parameters
+
+Ntot			180000		Total number of time steps
+Ninterm		20		Time steps between outputs
+DT			0.628318530	Time step length. 2PI = 1 orbit
+OutputDir		@outputs/newtheory_h0_006_alpha_1e_3_planets_3_1_sigma0_1e_3_beta_03
+
