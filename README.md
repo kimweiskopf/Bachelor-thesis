@@ -18,4 +18,4 @@ The folder 'torques' contains the scripts for the torques in combination with a 
 The torque scripts can be run with the 'schnellstart' file and this file changes some physical parameters between the runs of the torque scripts. The current datanew file contains the datapoint from my simulations but can also be changed.
 
 # fargo 3D
-In the folder named 'fargo 3D', there is an exaple par file I used for my simulations as well as the potential.c file I used, which I changed from the original code.
+In the folder named 'fargo 3D', there is an exaple par file and opt file I used for my simulations as well as the potential.c file I used, which I changed from the original code.
